@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Experiment 6</title>    
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    </head>
+    <body class="bg-dark">        
+        <h1 class="text-center p-5 text-warning">JAVASCRIPT TIMER FUNCTIONS AND OBJECTS</h1>
+        <hr class="border border-warning border-2 opacity-50">
+
+        <section id="Q1">
+            <h3 class="text-center text-white bg mt-5">1. Digital Clock</h3>
+            <div class="text-center ">
+                <button class="btn btn-outline-warning mt-5" onclick="q1()">Clock</button>
+               
+                <h1 id="time" class="text-warning mt-5 mb-5"></h1>    
+                <h1 id="stopClock" class="mt-5 mb-5"></h1>  
+                         
+            </div>
+            
+            
+            <hr class="border border-warning border-2 opacity-50" style="margin-bottom: 0;">
+        </section>
+        
+        <section id="Q2">
+            <h3 class="text-center text-white bg p-5">2. BG Color Changer</h3>  
+            <div class="text-center ">
+                <button class="btn btn-outline-warning mb-5" onclick="q2()">Change Color</button>
+                <h1 id="stopBg"></h1>
+                               
+            </div>          
+            <hr class="border border-warning border-2 opacity-50">
+        </section>
+
+        <section id="Q3">
+            <h3 class="text-center text-white bg mt-5">3. Font Big or Small ?</h3>
+            <div class="container col-sm-5 mt-5">
+                <p id="para" class="text-white mb-5 text-center" onmouseover="q3On()" onmouseout="q3Off()">We are given with the most sophisticated machine in the planet and we never take the time to understand how it works or thought of reading the manual. The thoughts and emotions that you and I feel are all coming from within us, some people get so overwhelmed by these thoughts that they do unspeakable things. Learning how to control them is the most sensible thing anybody can do in their lifetime.</p>
+                                           
+            </div>
+            
+            <hr class="border border-warning border-2 opacity-50">
+        </section>
+
+        <section id="Q4">  <!--height="120" width="340"-->
+            <h3 class="text-center text-white bg mt-5">4. Moving Car</h3>
+            <div class="container-fluid mt-5">
+                <img id="car" class="m-4" src="https://i.postimg.cc/BvDGP3sy/car.webp" height="60" width="170" alt="car-img" style="position: relative; left: 0px">
+                         
+                <div class="text-center ">
+                    <button class="btn btn-outline-success m-3" onclick="q4Start()">Start</button>
+                    <button class="btn btn-outline-danger m-3" onclick="q4Stop()">Stop</button>                    
+                </div>                            
+            </div>
+            <h5 id="convertedValue" class="text-center text-warning mb-5"></h5> 
+            <hr class="border border-warning border-2 opacity-50">
+        </section>
+
+        <section id="Q5">
+            <h3 class="text-center text-white bg mt-5">5. Array of Objects</h3>
+            <div class="container col-sm-12 mt-5">                
+                <div class="text-center">
+                    <button class="btn btn-outline-warning mb-5" onclick="q5()">Print Student Details</button>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <h5 id="bfr" class="text-warning"></h5>
+                        <p id="before" class="text-warning"></p>
+
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <h5 id="aft" class="text-warning"></h5>
+                        <p id="after" class="text-warning"></p>
+
+                    </div>
+                </div>                            
+            </div>            
+            <h5 id="details" class="text-center text-warning"></h5> 
+            <hr class="border border-warning border-2 opacity-50">
+        </section>
+
+        
+
+        <div class="p-5 text-center">
+            <p class="text-warning">© Alan D Daniels</p>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

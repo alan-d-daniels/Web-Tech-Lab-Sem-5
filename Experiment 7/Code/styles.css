@@ -1,0 +1,66 @@
+.start{
+    width: 700px;
+    height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 88px;
+
+    
+
+
+}
+
+.finish{
+    height: 484px;
+    width: 168px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 211px;
+    
+    
+
+
+}
+
+#car{
+    position: relative; 
+    bottom: 607px;
+    left: 380px;
+    top:-607px;
+    right:-380px;    
+}
+
+
+.trapezoid {
+    border-bottom: 50px solid #555;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 125px;
+    margin-left: 30px;
+  
+}
+
+
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+    display: inline-block;
+    
+  
+}
+
+.tyre{
+    margin-right: 1025px;
+}
+
+.rectangle {
+  height: 60px;  
+  width: 277px;
+  background-color: #555;
+}

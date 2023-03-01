@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    
+}
+.header{
+    background-color: #0E185F;
+}
+.header > img{
+    height: 150px;
+    width: 150px;
+    padding: 12px;
+    
+}
+.header > h1{
+    text-align: center;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    margin: 0px;   
+    padding-left: 466px;
+    
+
+}
+.icon{
+    display: inline;
+    position: relative;
+    bottom: 140px;
+    left: 600px;
+    background-color: white;
+}
+
+li{
+    display: inline;
+    padding: 10%;
+    
+}
+
+.nav-bar{
+    background-color: #8FE3CF;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-bar > ul> li>a:link{
+    background-color:#a2a1a5 ;    
+
+}
+.nav-bar > ul> li>a:visited{
+    background-color: white;    
+
+
+}
+
+.nav-bar > ul> li>a:hover{
+    background-color: yellow;    
+
+}
+.nav-bar > ul> li>a:active{
+    background-color: red;    
+
+}
+
+
+.about{
+    background-color: #06848c;
+    background-image:url('back-ground..jpg');
+    background-size: 600px 400px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+.about > div{
+    height: 300px;
+    width: 50%;
+    border:5px dotted #6287da;
+    margin-left: 85px;
+    background-color: #a4d3ed;
+    position: relative;
+    top: 90px;
+    padding: 20px;
+
+}
+.skills{
+    background-color: #100720;
+    text-align: center;
+}
+.skills >img{
+    padding: 50px;
+    
+}
+
+.family{
+    text-align: center;
+    padding: 10px;
+}
+
+.family > div{
+    padding: 20px;
+    
+}
+
+h5{
+    padding: 30px;
+}
+
+
+
+.kyoshi{
+    display: inline-table;
+    width:30%;
+    background-color: #F4FCD9;
+}
+.roku{
+    display: inline-table;
+    width:30%;
+    background-color: #FFF2F2;
+}
+.aang{
+    display: inline-table;
+    width:30%;
+    background-color: #FFFDE1;
+}
+
+.credits{
+    text-align: center;
+    background-color: #0E185F;
+    padding: 50px;
+    color: white;
+    line-height: 20px;
+}
+.fire,.water,.wind,.earth{
+    font-size: 30px;
+    color: #F0EABE;
+    position: relative;    
+    border: solid white;
+    display: inline;
+}
+.fire{
+    right: 185px;
+    bottom: 62px;
+    
+}
+.water{
+    right: 185px;
+    bottom: 62px;
+    
+}
+.wind{
+    right: 205px;
+    bottom: 62px;
+    
+}
+.earth{
+    right: -600px;
+    bottom: 101px;
+    
+}

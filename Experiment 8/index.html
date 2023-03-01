@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Experiment 8</title>    
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <!-- AngularJS CDN -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>        
+        <!-- Fontawesome CDN -->
+        <script src="https://kit.fontawesome.com/a8e72d7fb3.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body class="bg-dark text-light" ng-app="" >        
+        <h1 class="text-center p-5 text-warning">AngularJS</h1>
+        <hr class="border border-warning border-2 opacity-50">
+
+        <section id="Q1"  ng-controller="cmtCtrl">
+            <h3 class="text-center text-white bg mt-5">1. Comment Box</h3>
+            <div class="container col-sm-6 mt-5">
+                <label for="t1" class="form-label text-white">Enter your Comment</label>
+                <textarea id="t1" class="form-control" cols="30" rows="5" ng-model="cmt" placeholder="Enter Comment"></textarea>
+                
+                <div class="text-center ">
+                    <button class="btn btn-outline-warning mt-5" ng-click="postBtn()">Post</button>
+                </div>
+                <h5 id="result1" class="text-start text-light mt-5 mb-2">{{heading}}</h5>
+                <ul class="list-group mb-4">
+                    <li  class="list-group-item bg-dark border-warning text-light text-start" ng-repeat="comment in comments">{{comment}} <i class="fa-solid fa-xmark ms-4 text-danger" ng-click="remItem()"></i></li>
+                </ul>   
+                     
+            </div>
+            <hr class="border border-warning border-2 opacity-50">
+        </section>
+        
+        <section id="Q2" ng-app="calc" ng-controller="calcCtrl">
+            <h3 class="text-center text-white bg mt-5">2. Simple Calculator</h3>
+            <div class="container col-sm-3 mt-5">
+                <label for="t2"  class="form-label text-white">Enter First number</label>
+                <input type="text" ng-model="n1" id="t2" class="form-control">                
+                <label for="t3" class="form-label text-white mt-4">Enter Second number</label>
+                <input type="text" ng-model="n2" id="t3" class="form-control">
+                <center>
+                <div class="text-center col-sm-6 mt-5">                    
+                    <select ng-model="operator" class="form-select" aria-label="Operators">                        
+                        <option selected disabled >Operators</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="X">X</option>
+                        <option value="÷">÷</option>
+                      </select>
+                </div>
+                </center>
+                <h5 id="result2" class="text-center text-warning mt-5 mb-5">{{ result() }}</h5>             
+            </div>
+            <hr class="border border-warning border-2 opacity-50">
+        </section>
+
+        <section id="Q3" ng-controller="todoCtrl">
+            <h3 class="text-center text-white bg mt-5">3. To-Do List</h3>
+            <div class="container col-sm-3 mt-5">
+                <label for="height" class="form-label text-white">Enter Task</label>
+                <input type="text" ng-model="task" id="height" class="form-control">                
+                <div class="text-center ">
+                    <button class="btn btn-outline-warning mt-3 mb-5" ng-click="addBtn()">Add</button>
+                </div>
+                <h5 id="result1" class="text-start text-light mt-5 mb-2">{{heading}}</h5>
+                <ul class="list-group">
+                    <li  class="list-group-item bg-dark border-warning text-light text-start" ng-repeat="task in tasks">{{task}} <i ng-click="remTask($index)" class="fa-solid fa-xmark ms-4 text-danger" ></i></li>
+                </ul>                              
+            </div>
+            
+            <hr class="border border-warning border-2 opacity-50">
+        </section>
+
+
+        <div class="p-5 text-center">
+            <p class="text-warning">© Alan D Daniels</p>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
